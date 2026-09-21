@@ -1,0 +1,24 @@
+body {
+    background: url('../img/fondo.png') no-repeat center center/cover;
+    min-height: 100vh;  
+}
+
+
+.input {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px;
+}
+
+.input {
+    background: rgba(255,255,255,0.25);
+    border-color: #00ffae;
+    box-shadow: none;
+}
+
+label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}

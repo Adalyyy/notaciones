@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/b5.css">
+    <link rel="stylesheet" href="public/css/main.css"> 
+    <script src="/public/js/b5.js"></script>
+    <script src="/public/js/popper.js"></script>
+    <script src="/public/js/leader.js"></script>
+    <title>Notaciones</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center ">
+            <div class="col-12 text-center mb-3 text-success">
+                <h1 class="text-center text-light">Notaciones</h1>
+
+            </div>
+            <div class="col-3">
+                <div class="row">
+                    <div class="col-6">
+                        <input id="expresion" class="form-control input" type="text">
+                    </div>
+                    <div class="col-12">
+                        <p>Infija: <span id="infija"></span></p>
+                        <p>Prefija: <span id="prefija"></span></p>
+                        <p>Postfija: <span id="postfija"></span></p>
+                    </div>
+                </div>
+                <button id="calcular" class="btn btn-success mt-2">
+                    Convertir
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="/public/js/index.js"></script>
+</body>
+</html>
+
