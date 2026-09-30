@@ -153,4 +153,4 @@ borrar.addEventListener("click", () => {
     resultadoPrefija.textContent = "";
     resultadoPostfija.textContent = "";
 
-});
+})
