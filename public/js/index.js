@@ -13,6 +13,13 @@ const prioridad = {
     "/": 2
 };
 
+const formatExpresion = (texto) => {
+    return texto
+        .replace(/([+\-*/()])/g, " $1 ")
+        .replace(/\s+/g, " ")
+        .trim();
+};
+
 // BUSCAR OPERADOR PRINCIPAL
 const buscarOperador = (texto) => {
 
@@ -140,9 +147,9 @@ calcular.addEventListener("click", () => {
 
     const arbol = crearArbol(operacion);
 
-    resultadoInfija.textContent = infija(arbol);
-    resultadoPrefija.textContent = prefija(arbol);
-    resultadoPostfija.textContent = postfija(arbol);
+    resultadoInfija.textContent = formatExpresion(infija(arbol));
+    resultadoPrefija.textContent = formatExpresion(prefija(arbol));
+    resultadoPostfija.textContent = formatExpresion(postfija(arbol));
 
 });
 borrar.addEventListener("click", () => {
