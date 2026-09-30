@@ -1,5 +1,6 @@
 const expresion = document.getElementById("expresion");
 const calcular = document.getElementById("calcular");
+const borrar = document.getElementById("borrar");
 const resultadoInfija = document.getElementById("infija");
 const resultadoPrefija = document.getElementById("prefija");
 const resultadoPostfija = document.getElementById("postfija");
@@ -142,5 +143,14 @@ calcular.addEventListener("click", () => {
     resultadoInfija.textContent = infija(arbol);
     resultadoPrefija.textContent = prefija(arbol);
     resultadoPostfija.textContent = postfija(arbol);
+
+});
+borrar.addEventListener("click", () => {
+
+    expresion.value = "";
+
+    resultadoInfija.textContent = "";
+    resultadoPrefija.textContent = "";
+    resultadoPostfija.textContent = "";
 
 });
